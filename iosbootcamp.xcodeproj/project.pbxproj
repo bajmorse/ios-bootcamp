@@ -1,0 +1,535 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8404BDEE188C64F4008F8112 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8404BDED188C64F4008F8112 /* Foundation.framework */; };
+		8404BDF0188C64F4008F8112 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8404BDEF188C64F4008F8112 /* CoreGraphics.framework */; };
+		8404BDF2188C64F4008F8112 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8404BDF1188C64F4008F8112 /* UIKit.framework */; };
+		8404BDF4188C64F4008F8112 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8404BDF3188C64F4008F8112 /* CoreData.framework */; };
+		8404BDFA188C64F4008F8112 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8404BDF8188C64F4008F8112 /* InfoPlist.strings */; };
+		8404BDFC188C64F4008F8112 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8404BDFB188C64F4008F8112 /* main.m */; };
+		8404BE00188C64F4008F8112 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8404BDFF188C64F4008F8112 /* AppDelegate.m */; };
+		8404BE03188C64F4008F8112 /* iosbootcamp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8404BE01188C64F4008F8112 /* iosbootcamp.xcdatamodeld */; };
+		8404BE05188C64F4008F8112 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8404BE04188C64F4008F8112 /* Images.xcassets */; };
+		8404BE0C188C64F4008F8112 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8404BE0B188C64F4008F8112 /* XCTest.framework */; };
+		8404BE0D188C64F4008F8112 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8404BDED188C64F4008F8112 /* Foundation.framework */; };
+		8404BE0E188C64F4008F8112 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8404BDF1188C64F4008F8112 /* UIKit.framework */; };
+		8404BE0F188C64F4008F8112 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8404BDF3188C64F4008F8112 /* CoreData.framework */; };
+		8404BE17188C64F4008F8112 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8404BE15188C64F4008F8112 /* InfoPlist.strings */; };
+		8404BE19188C64F4008F8112 /* iosbootcampTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8404BE18188C64F4008F8112 /* iosbootcampTests.m */; };
+		8404BE27188C6519008F8112 /* RTTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8404BE25188C6519008F8112 /* RTTableViewController.m */; };
+		8404BE2A188C675D008F8112 /* Movie.m in Sources */ = {isa = PBXBuildFile; fileRef = 8404BE29188C675D008F8112 /* Movie.m */; };
+		8404BE2F188C8A81008F8112 /* CurrentMovie.m in Sources */ = {isa = PBXBuildFile; fileRef = 8404BE2E188C8A80008F8112 /* CurrentMovie.m */; };
+		8404BE35188DA88C008F8112 /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8404BE34188DA88C008F8112 /* SearchViewController.m */; };
+		8404BE38188DB2C2008F8112 /* CurrentMoviesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8404BE37188DB2C2008F8112 /* CurrentMoviesViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8404BE10188C64F4008F8112 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8404BDE2188C64F4008F8112 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8404BDE9188C64F4008F8112;
+			remoteInfo = iosbootcamp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8404BDEA188C64F4008F8112 /* iosbootcamp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iosbootcamp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8404BDED188C64F4008F8112 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		8404BDEF188C64F4008F8112 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		8404BDF1188C64F4008F8112 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		8404BDF3188C64F4008F8112 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		8404BDF7188C64F4008F8112 /* iosbootcamp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iosbootcamp-Info.plist"; sourceTree = "<group>"; };
+		8404BDF9188C64F4008F8112 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8404BDFB188C64F4008F8112 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8404BDFD188C64F4008F8112 /* iosbootcamp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iosbootcamp-Prefix.pch"; sourceTree = "<group>"; };
+		8404BDFE188C64F4008F8112 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8404BDFF188C64F4008F8112 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8404BE02188C64F4008F8112 /* iosbootcamp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = iosbootcamp.xcdatamodel; sourceTree = "<group>"; };
+		8404BE04188C64F4008F8112 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		8404BE0A188C64F4008F8112 /* iosbootcampTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iosbootcampTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8404BE0B188C64F4008F8112 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		8404BE14188C64F4008F8112 /* iosbootcampTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iosbootcampTests-Info.plist"; sourceTree = "<group>"; };
+		8404BE16188C64F4008F8112 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8404BE18188C64F4008F8112 /* iosbootcampTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iosbootcampTests.m; sourceTree = "<group>"; };
+		8404BE24188C6519008F8112 /* RTTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTTableViewController.h; sourceTree = "<group>"; };
+		8404BE25188C6519008F8112 /* RTTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTTableViewController.m; sourceTree = "<group>"; };
+		8404BE28188C675D008F8112 /* Movie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Movie.h; sourceTree = "<group>"; };
+		8404BE29188C675D008F8112 /* Movie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Movie.m; sourceTree = "<group>"; };
+		8404BE2D188C8A80008F8112 /* CurrentMovie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CurrentMovie.h; sourceTree = "<group>"; };
+		8404BE2E188C8A80008F8112 /* CurrentMovie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CurrentMovie.m; sourceTree = "<group>"; };
+		8404BE33188DA88C008F8112 /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SearchViewController.h; path = ../SearchViewController.h; sourceTree = "<group>"; };
+		8404BE34188DA88C008F8112 /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SearchViewController.m; path = ../SearchViewController.m; sourceTree = "<group>"; };
+		8404BE36188DB2C2008F8112 /* CurrentMoviesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CurrentMoviesViewController.h; sourceTree = "<group>"; };
+		8404BE37188DB2C2008F8112 /* CurrentMoviesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CurrentMoviesViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8404BDE7188C64F4008F8112 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8404BDF0188C64F4008F8112 /* CoreGraphics.framework in Frameworks */,
+				8404BDF4188C64F4008F8112 /* CoreData.framework in Frameworks */,
+				8404BDF2188C64F4008F8112 /* UIKit.framework in Frameworks */,
+				8404BDEE188C64F4008F8112 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8404BE07188C64F4008F8112 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8404BE0C188C64F4008F8112 /* XCTest.framework in Frameworks */,
+				8404BE0F188C64F4008F8112 /* CoreData.framework in Frameworks */,
+				8404BE0E188C64F4008F8112 /* UIKit.framework in Frameworks */,
+				8404BE0D188C64F4008F8112 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8404BDE1188C64F4008F8112 = {
+			isa = PBXGroup;
+			children = (
+				8404BDF5188C64F4008F8112 /* iosbootcamp */,
+				8404BE12188C64F4008F8112 /* iosbootcampTests */,
+				8404BDEC188C64F4008F8112 /* Frameworks */,
+				8404BDEB188C64F4008F8112 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8404BDEB188C64F4008F8112 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8404BDEA188C64F4008F8112 /* iosbootcamp.app */,
+				8404BE0A188C64F4008F8112 /* iosbootcampTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8404BDEC188C64F4008F8112 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8404BDED188C64F4008F8112 /* Foundation.framework */,
+				8404BDEF188C64F4008F8112 /* CoreGraphics.framework */,
+				8404BDF1188C64F4008F8112 /* UIKit.framework */,
+				8404BDF3188C64F4008F8112 /* CoreData.framework */,
+				8404BE0B188C64F4008F8112 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8404BDF5188C64F4008F8112 /* iosbootcamp */ = {
+			isa = PBXGroup;
+			children = (
+				8404BE39188DB2C9008F8112 /* ViewControllers */,
+				8404BE2C188C8A68008F8112 /* Objects */,
+				8404BE2B188C677E008F8112 /* Core Data */,
+				8404BE24188C6519008F8112 /* RTTableViewController.h */,
+				8404BE25188C6519008F8112 /* RTTableViewController.m */,
+				8404BDFE188C64F4008F8112 /* AppDelegate.h */,
+				8404BDFF188C64F4008F8112 /* AppDelegate.m */,
+				8404BE04188C64F4008F8112 /* Images.xcassets */,
+				8404BE01188C64F4008F8112 /* iosbootcamp.xcdatamodeld */,
+				8404BDF6188C64F4008F8112 /* Supporting Files */,
+			);
+			path = iosbootcamp;
+			sourceTree = "<group>";
+		};
+		8404BDF6188C64F4008F8112 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8404BDF7188C64F4008F8112 /* iosbootcamp-Info.plist */,
+				8404BDF8188C64F4008F8112 /* InfoPlist.strings */,
+				8404BDFB188C64F4008F8112 /* main.m */,
+				8404BDFD188C64F4008F8112 /* iosbootcamp-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8404BE12188C64F4008F8112 /* iosbootcampTests */ = {
+			isa = PBXGroup;
+			children = (
+				8404BE18188C64F4008F8112 /* iosbootcampTests.m */,
+				8404BE13188C64F4008F8112 /* Supporting Files */,
+			);
+			path = iosbootcampTests;
+			sourceTree = "<group>";
+		};
+		8404BE13188C64F4008F8112 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8404BE14188C64F4008F8112 /* iosbootcampTests-Info.plist */,
+				8404BE15188C64F4008F8112 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8404BE2B188C677E008F8112 /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				8404BE28188C675D008F8112 /* Movie.h */,
+				8404BE29188C675D008F8112 /* Movie.m */,
+			);
+			name = "Core Data";
+			sourceTree = "<group>";
+		};
+		8404BE2C188C8A68008F8112 /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				8404BE2D188C8A80008F8112 /* CurrentMovie.h */,
+				8404BE2E188C8A80008F8112 /* CurrentMovie.m */,
+			);
+			name = Objects;
+			sourceTree = "<group>";
+		};
+		8404BE39188DB2C9008F8112 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				8404BE33188DA88C008F8112 /* SearchViewController.h */,
+				8404BE34188DA88C008F8112 /* SearchViewController.m */,
+				8404BE36188DB2C2008F8112 /* CurrentMoviesViewController.h */,
+				8404BE37188DB2C2008F8112 /* CurrentMoviesViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8404BDE9188C64F4008F8112 /* iosbootcamp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8404BE1C188C64F4008F8112 /* Build configuration list for PBXNativeTarget "iosbootcamp" */;
+			buildPhases = (
+				8404BDE6188C64F4008F8112 /* Sources */,
+				8404BDE7188C64F4008F8112 /* Frameworks */,
+				8404BDE8188C64F4008F8112 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iosbootcamp;
+			productName = iosbootcamp;
+			productReference = 8404BDEA188C64F4008F8112 /* iosbootcamp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8404BE09188C64F4008F8112 /* iosbootcampTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8404BE1F188C64F4008F8112 /* Build configuration list for PBXNativeTarget "iosbootcampTests" */;
+			buildPhases = (
+				8404BE06188C64F4008F8112 /* Sources */,
+				8404BE07188C64F4008F8112 /* Frameworks */,
+				8404BE08188C64F4008F8112 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8404BE11188C64F4008F8112 /* PBXTargetDependency */,
+			);
+			name = iosbootcampTests;
+			productName = iosbootcampTests;
+			productReference = 8404BE0A188C64F4008F8112 /* iosbootcampTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8404BDE2188C64F4008F8112 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Brenton Morse";
+				TargetAttributes = {
+					8404BE09188C64F4008F8112 = {
+						TestTargetID = 8404BDE9188C64F4008F8112;
+					};
+				};
+			};
+			buildConfigurationList = 8404BDE5188C64F4008F8112 /* Build configuration list for PBXProject "iosbootcamp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 8404BDE1188C64F4008F8112;
+			productRefGroup = 8404BDEB188C64F4008F8112 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8404BDE9188C64F4008F8112 /* iosbootcamp */,
+				8404BE09188C64F4008F8112 /* iosbootcampTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8404BDE8188C64F4008F8112 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8404BDFA188C64F4008F8112 /* InfoPlist.strings in Resources */,
+				8404BE05188C64F4008F8112 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8404BE08188C64F4008F8112 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8404BE17188C64F4008F8112 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8404BDE6188C64F4008F8112 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8404BE2A188C675D008F8112 /* Movie.m in Sources */,
+				8404BE27188C6519008F8112 /* RTTableViewController.m in Sources */,
+				8404BE00188C64F4008F8112 /* AppDelegate.m in Sources */,
+				8404BE03188C64F4008F8112 /* iosbootcamp.xcdatamodeld in Sources */,
+				8404BDFC188C64F4008F8112 /* main.m in Sources */,
+				8404BE38188DB2C2008F8112 /* CurrentMoviesViewController.m in Sources */,
+				8404BE2F188C8A81008F8112 /* CurrentMovie.m in Sources */,
+				8404BE35188DA88C008F8112 /* SearchViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8404BE06188C64F4008F8112 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8404BE19188C64F4008F8112 /* iosbootcampTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8404BE11188C64F4008F8112 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8404BDE9188C64F4008F8112 /* iosbootcamp */;
+			targetProxy = 8404BE10188C64F4008F8112 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8404BDF8188C64F4008F8112 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8404BDF9188C64F4008F8112 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		8404BE15188C64F4008F8112 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8404BE16188C64F4008F8112 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8404BE1A188C64F4008F8112 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8404BE1B188C64F4008F8112 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8404BE1D188C64F4008F8112 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iosbootcamp/iosbootcamp-Prefix.pch";
+				INFOPLIST_FILE = "iosbootcamp/iosbootcamp-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		8404BE1E188C64F4008F8112 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iosbootcamp/iosbootcamp-Prefix.pch";
+				INFOPLIST_FILE = "iosbootcamp/iosbootcamp-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		8404BE20188C64F4008F8112 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/iosbootcamp.app/iosbootcamp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iosbootcamp/iosbootcamp-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "iosbootcampTests/iosbootcampTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		8404BE21188C64F4008F8112 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/iosbootcamp.app/iosbootcamp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iosbootcamp/iosbootcamp-Prefix.pch";
+				INFOPLIST_FILE = "iosbootcampTests/iosbootcampTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8404BDE5188C64F4008F8112 /* Build configuration list for PBXProject "iosbootcamp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8404BE1A188C64F4008F8112 /* Debug */,
+				8404BE1B188C64F4008F8112 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8404BE1C188C64F4008F8112 /* Build configuration list for PBXNativeTarget "iosbootcamp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8404BE1D188C64F4008F8112 /* Debug */,
+				8404BE1E188C64F4008F8112 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		8404BE1F188C64F4008F8112 /* Build configuration list for PBXNativeTarget "iosbootcampTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8404BE20188C64F4008F8112 /* Debug */,
+				8404BE21188C64F4008F8112 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		8404BE01188C64F4008F8112 /* iosbootcamp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				8404BE02188C64F4008F8112 /* iosbootcamp.xcdatamodel */,
+			);
+			currentVersion = 8404BE02188C64F4008F8112 /* iosbootcamp.xcdatamodel */;
+			path = iosbootcamp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 8404BDE2188C64F4008F8112 /* Project object */;
+}
